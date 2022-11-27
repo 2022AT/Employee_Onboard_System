@@ -1,0 +1,41 @@
+.img{
+    width:60px;
+    height: 40px;
+    margin-left:0;
+}
+.collapse .navbar-nav li{
+    margin: 0px 10px;
+}
+
+.nav-item .notif{
+    
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #a2b5d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    cursor: pointer;
+}
+.form-check .form-check-input{
+    margin: 11px 10px;
+    
+    
+} 
+.d-flex button{
+    background-color:rgb(17, 17, 160);
+    border: aliceblue;
+    
+}
+.nav-item .profile img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    cursor: pointer;
+}

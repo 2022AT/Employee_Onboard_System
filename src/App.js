@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import Form from './Components/Form';
+import NavbarUp from'./Components/NavbarUp';
+import Table from './Components/Table';
+// import Table1 from './Components/Table1';
+import Header from './Components/Header';
+import Barchart from './Components/Barchart';
+import Searchbar from './Components/Searchbar';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+// import Sidebar from './Components/Sidebar';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+ <Header />
+   <NavbarUp />
+      <BrowserRouter>
+      {/* <Sidebar/> */}
+    
+        <Routes>
+          <Route path="/Form" exact element={<Form />} />
+          <Route path="/Barchart" exact element={<Barchart />} />
+          <Route path="/Table" exact element={<Table />} />
+          <Route path="/Searchbar" exact element={<Searchbar />} />
+
+        </Routes>
+      </BrowserRouter>
+            
+
+   </>
   );
-}
+};
 
 export default App;
